@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUD di Faggeto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="joinScreen">
+    <h1>🏰 MUD di Faggeto</h1>
+    <p>Un piccolo mondo fantasy da esplorare con gli amici.</p>
+    <input id="nameInput" placeholder="Il tuo nome" maxlength="20" />
+    <button id="joinBtn">Entra nel mondo</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <div id="left">
+      <div id="roomImage"></div>
+      <h2 id="roomName"></h2>
+      <p id="roomDesc"></p>
+      <div id="roomItems"></div>
+      <div id="roomPlayers"></div>
+      <div id="exits"></div>
+    </div>
+    <div id="right">
+      <canvas id="mapCanvas" width="320" height="320"></canvas>
+      <div id="log"></div>
+      <div id="inputRow">
+        <input id="cmdInput" placeholder="scrivi un comando o un messaggio..." autocomplete="off" />
+        <button id="sendBtn">Invia</button>
+      </div>
+      <div id="hint">Comandi: vai &lt;direzione&gt; · prendi &lt;oggetto&gt; · inventario · oppure scrivi per parlare</div>
+    </div>
+  </div>
+
+<script src="icons.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
