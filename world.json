@@ -1,0 +1,77 @@
+{
+  "start": "piazza",
+  "rooms": {
+    "piazza": {
+      "name": "Piazza del Villaggio",
+      "desc": "Il cuore del villaggio di Faggeto. Una fontana di pietra gorgoglia al centro, circondata da case dal tetto di paglia.",
+      "icon": "villaggio",
+      "x": 2, "y": 2,
+      "exits": { "nord": "taverna", "est": "bottega", "sud": "sentiero", "ovest": "casa_anziano" },
+      "items": []
+    },
+    "taverna": {
+      "name": "Taverna del Cinghiale Nero",
+      "desc": "Aria calda, birra e legna che scoppietta. Alcuni avventori ti guardano con curiosità.",
+      "icon": "taverna",
+      "x": 2, "y": 1,
+      "exits": { "sud": "piazza" },
+      "items": ["boccale di birra"]
+    },
+    "bottega": {
+      "name": "Bottega del Fabbro",
+      "desc": "Il calore della forgia riempie la stanza. Armi e attrezzi pendono dalle pareti.",
+      "icon": "bottega",
+      "x": 3, "y": 2,
+      "exits": { "ovest": "piazza" },
+      "items": ["pugnale arrugginito"]
+    },
+    "casa_anziano": {
+      "name": "Casa dell'Anziano",
+      "desc": "Una stanza piccola e polverosa, piena di libri e mappe ingiallite.",
+      "icon": "casa",
+      "x": 1, "y": 2,
+      "exits": { "est": "piazza" },
+      "items": ["mappa strappata"]
+    },
+    "sentiero": {
+      "name": "Sentiero del Bosco",
+      "desc": "Un sentiero di terra battuta si addentra tra alberi sempre più fitti.",
+      "icon": "sentiero",
+      "x": 2, "y": 3,
+      "exits": { "nord": "piazza", "sud": "foresta" },
+      "items": []
+    },
+    "foresta": {
+      "name": "Cuore della Foresta",
+      "desc": "La luce fatica a filtrare tra le fronde. Si sente un fruscio poco lontano.",
+      "icon": "foresta",
+      "x": 2, "y": 4,
+      "exits": { "nord": "sentiero", "est": "radura", "ovest": "grotta_ingresso" },
+      "items": ["bacche selvatiche"]
+    },
+    "radura": {
+      "name": "Radura Silenziosa",
+      "desc": "Un cerchio d'erba illuminato dal sole, stranamente silenzioso. Antiche pietre spuntano dal terreno.",
+      "icon": "radura",
+      "x": 3, "y": 4,
+      "exits": { "ovest": "foresta" },
+      "items": ["pietra runica"]
+    },
+    "grotta_ingresso": {
+      "name": "Ingresso della Grotta",
+      "desc": "Una fessura scura nella roccia. Un vento freddo esce dall'oscurità.",
+      "icon": "grotta",
+      "x": 1, "y": 4,
+      "exits": { "est": "foresta", "sud": "grotta_profonda" },
+      "items": ["torcia spenta"]
+    },
+    "grotta_profonda": {
+      "name": "Grotta Profonda",
+      "desc": "Il buio è quasi totale. L'eco dei tuoi passi rimbalza sulle pareti umide.",
+      "icon": "grotta_buia",
+      "x": 1, "y": 5,
+      "exits": { "nord": "grotta_ingresso" },
+      "items": ["gemma luminosa"]
+    }
+  }
+}
